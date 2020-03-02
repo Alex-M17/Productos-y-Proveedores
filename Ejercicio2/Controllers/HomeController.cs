@@ -10,28 +10,16 @@ using Ejercicio2.Models;
 namespace Ejercicio2.Controllers
 {
     public class HomeController : Controller
-    {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
+    {       
         public IActionResult Index()
         {
-            return View();
+            return View(new Producto());
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult Index(Producto p)
         {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(p);
         }
     }
 }
