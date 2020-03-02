@@ -21,7 +21,6 @@ C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Ejerc
 C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.TagHelpers.output.cache
 C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.RazorCoreGenerate.cache
 C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -33,3 +32,4 @@ C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Ejerc
 C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.dll
 C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.pdb
 C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.csproj.CopyComplete
+C:\Users\user\Desktop\Nueva carpeta (4)\Ejercicio2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Proveedor.cshtml.g.cs

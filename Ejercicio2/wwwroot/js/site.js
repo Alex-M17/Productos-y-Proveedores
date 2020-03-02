@@ -16,10 +16,6 @@
             descripcion: desc,
             fechaVenc: fVenc
         };
-       
-        nom.value = "";
-        desc.value = "";
-        fVenc.value = "";   
 
         appendObjectToLocalStorage(user);
     });

@@ -1,41 +1,43 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-    
-    <div class="row">
-        <div class="col-xl-11">
-            <table class="table table-info table-borderless w-auto">
-                <tr>
-                    <td class="float-right">Nombre del producto</td>
-                    <td><input type="text" name="txtNombre" id="txtNombre" class="form-control" /></td>
-                </tr>
-                <tr>
-                    <td class="float-right">Descripcion del producto</td>
-                    <td><input type="text" name="txtDescripcion" id="txtDescripcion" class="form-control" /></td>
-                </tr>
-                <tr>
-                    <td class="float-right">Fecha de vencimiento del producto</td>
-                    <td><input type="text" name="txtFechaVenc" id="txtFechaVenc" class="form-control" /></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button type="button" class="btn btn-info float-right" id="boton-guardar">Guardar</button>
-                    </td>
-                </tr>
-            </table>
 
-            <table id="grid" class="table">
-                <thead class="thead-light">
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nombre del producto</th>
-                        <th scope="col">Descripcion del producto</th>
-                        <th scope="col">Fecha de vencimiento del producto</th>
-                        <th scope="col">ID del proveedor</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody id="body"></tbody>
-            </table>
-        </div> 
+<div class="row">
+    <div class="col-xl-11">
+        <table class="table table-info table-borderless w-auto">
+            <tr>
+                <td class="float-right">Nombre del producto</td>
+                <td><input type="text" name="txtNombre" id="txtNombre" class="form-control" /></td>
+            </tr>
+            <tr>
+                <td class="float-right">Descripcion del producto</td>
+                <td><input type="text" name="txtDescripcion" id="txtDescripcion" class="form-control" /></td>
+            </tr>
+            <tr>
+                <td class="float-right">Fecha de vencimiento del producto</td>
+                <td><input type="text" name="txtFechaVenc" id="txtFechaVenc" class="form-control" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" class="btn btn-info float-right" id="boton-guardar">Guardar</button>
+                </td>
+            </tr>
+        </table>
+
+        <table id="grid" class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre del producto</th>
+                    <th scope="col">Descripcion del producto</th>
+                    <th scope="col">Fecha de vencimiento del producto</th>
+                    <th scope="col">ID del proveedor</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="body"></tbody>
+        </table>
     </div>
+</div>
+
+<script src="~/js/site.js" asp-append-version="true"></script> 

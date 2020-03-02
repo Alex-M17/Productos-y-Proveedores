@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Proveedor";
+}
+
+    <div class="row">
+        <div class="col-xl-11">
+            <table class="table table-info table-borderless w-auto">
+                <tr>
+                    <td class="float-right">Nombre</td>
+                    <td><input type="text" name="NombreTxt" id="NombreTxt" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td class="float-right">Direccion</td>
+                    <td><input type="text" name="DireccionTxt" id="DireccionTxt" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td class="float-right">Telefono</td>
+                    <td><input type="text" name="TelefonoTxt" id="TelefonoTxt" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" class="btn btn-info float-right" id="btnGuardar">Guardar</button>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="grid" class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Telefono</th>                       
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="body2"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="~/js/site2.js" asp-append-version="true"></script>
