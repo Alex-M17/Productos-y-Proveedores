@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\ListData.cs" />
+    <Compile Remove="Models\List_Data.cs" />
+    <Compile Remove="Models\Producto.cs" />
+    <Compile Remove="Models\Proveedor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Producto.json" />
   </ItemGroup>
 

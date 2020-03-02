@@ -10,16 +10,10 @@ using Ejercicio2.Models;
 namespace Ejercicio2.Controllers
 {
     public class HomeController : Controller
-    {       
+    {                   
         public IActionResult Index()
         {
-            return View(new Producto());
-        }
-
-        [HttpPost]
-        public IActionResult Index(Producto p)
-        {
-            return View(p);
+            return View();
         }
     }
 }

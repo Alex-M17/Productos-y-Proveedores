@@ -1,95 +1,41 @@
-﻿@model Ejercicio2.Models.Producto
-@{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-    <div>
-        <table class="table table-info w-50">
-            <tr>
-                <td>Nombre del producto</td>
-                <td><input type="text" name="txtNombre" id="txtNombre" /></td>
-            </tr>
-            <tr>
-                <td>Descripcion del producto</td>
-                <td><input type="text" name="txtDescripcion" id="txtDescripcion" /></td>
-            </tr>
-            <tr>
-                <td>Fecha de vencimiento del producto</td>
-                <td><input type="datetime" name="txtFechaVenc" id="txtFechaVenc" /></td>
-            </tr>
-            <tr>
-                <td>ID del proveedor</td>
-                <td><input type="number" name="txtProveedorId" id="txtProveedorId" /></td>
-            </tr>
-            <tr>
-                <td><input type="button" id="btnSave" value="Save to Local Storage" onClick="fnSaveData()" /> </td>
-                <td><input type="button" id="btnFind" value="Get Data From Local Storage" onClick="fnGetData()" /> </td>
-            </tr>
-        </table>
-
-        <table class="table">
-            <thead class="thead-light">
-                <tr>
-                    <th></th>
-                    <th scope="col">Nombre del producto</th>
-                    <th scope="col">Descripcion del producto</th>
-                    <th scope="col">Fecha de vencimiento del producto</th>
-                    <th scope="col">ID del proveedor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="table-light">
-                    <td scope="row">
-                        <span class="badge badge-primary"></span>
-                    </td>
-                    <td id="nombre"></td>
-                    <td id="descripcion"></td>
-                    <td id="fechaVenc"></td>
-                    <td id="proveedorId"></td>
-                    <td>
-                        <button id="edit" class="border-0" style="background: transparent;">
-                            <i class="fa fa-edit fa-lg"></i>
-                        </button>
-                        <button id="drop" class="border-0" style="background: transparent;">
-                            <i class="fa fa-trash fa-lg text-danger"></i>
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-<script>
-    function fnSaveData() {
-        
-        var NombreProducto = document.getElementById("txtNombre").value;
-        var DescProducto = document.getElementById("txtDescripcion").value;
-        var FechaVenc = document.getElementById("txtFechaVenc").value;
-        var ProveedorId = document.getElementById("txtProveedorId").value;
-        
-        window.localStorage.setItem("NombreProducto", NombreProducto);
-        window.localStorage.setItem("DescProducto", DescProducto);
-        window.localStorage.setItem("FechaVenc", FechaVenc);
-        window.localStorage.setItem("ProveedorId", ProveedorId);
-        
-
-
-        var nombre = window.localStorage.getItem("NombreProducto");
-        var descripcion = window.localStorage.getItem("DescProducto");
-        var fecha = window.localStorage.getItem("FechaVenc");
-        var proveedor = window.localStorage.getItem("ProveedorId");
-
-
-        document.getElementById("nombre").append(nombre);
-        document.getElementById("descripcion").append(descripcion);
-        document.getElementById("fechaVenc").append(fecha);
-        document.getElementById("proveedorId").append(proveedor);
-    }  
-
-   
     
+    <div class="row">
+        <div class="col-xl-11">
+            <table class="table table-info table-borderless w-auto">
+                <tr>
+                    <td class="float-right">Nombre del producto</td>
+                    <td><input type="text" name="txtNombre" id="txtNombre" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td class="float-right">Descripcion del producto</td>
+                    <td><input type="text" name="txtDescripcion" id="txtDescripcion" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td class="float-right">Fecha de vencimiento del producto</td>
+                    <td><input type="text" name="txtFechaVenc" id="txtFechaVenc" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" class="btn btn-info float-right" id="boton-guardar">Guardar</button>
+                    </td>
+                </tr>
+            </table>
 
-    function fnGetData(){    
-        alert(window.localStorage.getItem("Producto"));  
-    } 
-</script>
+            <table id="grid" class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre del producto</th>
+                        <th scope="col">Descripcion del producto</th>
+                        <th scope="col">Fecha de vencimiento del producto</th>
+                        <th scope="col">ID del proveedor</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="body"></tbody>
+            </table>
+        </div> 
+    </div>
